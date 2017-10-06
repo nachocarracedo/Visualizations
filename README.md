@@ -1,6 +1,6 @@
-## Visualize progress of a project
+## Visualizations
 
-Project where I show some visualizations (using matplotlib) I did at work for different projects.
+Project where I show some visualizations I did at work for different projects. Visualizations are made using **matplotlib** which I was learning at the time.
 
 * [loads.py](https://github.com/nachocarracedo/Visualizations/blob/master/loads.py): 
 	* [GOAL] Management wanted a daily report of the CPU loads of a cluster. I set up a script on the cluster that runs on a cron schedule. Then, this python script will get that data from a shared folder, parse it, and plot it. 
