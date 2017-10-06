@@ -8,7 +8,7 @@ Project where I show some visualizations (using matplotlib) I did at work for di
 ![Alt text](/images/GP2_loads_24h.png?raw=true)
 ![Alt text](/images/GP2_loads_cumulative.png?raw=true)
 
-* 2) [visualization_sfa_project.ipynb][https://github.com/nachocarracedo/Visualizations/blob/master/visualization_sfa_project.ipynb]: 
+* 2) [visualization_sfa_project.ipynb](https://github.com/nachocarracedo/Visualizations/blob/master/visualization_sfa_project.ipynb): 
 	* [GOAL] The project manager wanted a visualization that showed the current status of a migration project to show to stakeholders
 	
 ![Alt text](/images/migration_progress.png?raw=true)
