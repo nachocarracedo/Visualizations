@@ -94,13 +94,18 @@ for xnode in Xnodes_4gen:
     v = ax1.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
     
 ax1.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax1.axhline(y=1.2,c="red",linewidth=2,zorder=1)  
+ax1.axhline(y=1.25,c="red",linewidth=2,zorder=1)  
 
 xfmt = mdates.DateFormatter('%m/%d')
 ax1.xaxis.set_major_formatter(xfmt)
 
 xticks = ax1.xaxis.get_major_ticks()
-xticks[-1].label1.set_visible(False)
+#xticks[-1].label1.set_visible(False)
+
+yticks = ax1.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
 
 plt.legend(Xnodes_4gen,
            prop={'size':12},
@@ -118,10 +123,15 @@ for xnode in Xnodes_5gen:
     v = ax2.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
     
 ax2.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax2.axhline(y=1.2,c="red",linewidth=2,zorder=1)  
+ax2.axhline(y=1.25,c="red",linewidth=2,zorder=1)  
 
 xticks = ax2.xaxis.get_major_ticks()
-xticks[-1].label1.set_visible(False)
+#xticks[-1].label1.set_visible(False)
+
+yticks = ax2.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
 
 xfmt = mdates.DateFormatter('%m/%d')
 ax2.xaxis.set_major_formatter(xfmt)
@@ -144,13 +154,18 @@ for nlnode in NLnodes:
     v = ax3.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
 
 ax3.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax3.axhline(y=1.2,c="red",linewidth=2,zorder=1) 
+ax3.axhline(y=1.25,c="red",linewidth=2,zorder=1) 
 
 xfmt = mdates.DateFormatter('%m/%d')
 ax3.xaxis.set_major_formatter(xfmt)
 
 xticks = ax3.xaxis.get_major_ticks()
-xticks[-1].label1.set_visible(False)
+#xticks[-1].label1.set_visible(False)
+
+yticks = ax3.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
 
 plt.legend(NLnodes,
            prop={'size':12},
@@ -199,13 +214,18 @@ for xnode in Xnodes_4gen:
     v = ax1.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
     
 ax1.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax1.axhline(y=1.2,c="red",linewidth=2,zorder=1)  
+ax1.axhline(y=1.25,c="red",linewidth=2,zorder=1)  
 
 xfmt = mdates.DateFormatter('%H:%M')
 ax1.xaxis.set_major_formatter(xfmt)
 
 xticks = ax1.xaxis.get_major_ticks()
 #xticks[0].label1.set_visible(False)
+
+yticks = ax1.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
 
 plt.legend(Xnodes_4gen,
            prop={'size':12},
@@ -223,13 +243,18 @@ for xnode in Xnodes_5gen:
     v = ax2.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
     
 ax2.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax2.axhline(y=1.2,c="red",linewidth=2,zorder=1)  
+ax2.axhline(y=1.25,c="red",linewidth=2,zorder=1)  
 
 xfmt = mdates.DateFormatter('%H:%M')
 ax2.xaxis.set_major_formatter(xfmt)
 
 xticks = ax2.xaxis.get_major_ticks()
 #xticks[0].label1.set_visible(False)
+
+yticks = ax2.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
     
 plt.legend(Xnodes_5gen,
            prop={'size':12},
@@ -249,13 +274,18 @@ for nlnode in NLnodes:
     v = ax3.plot(aux['date'],aux["15min"],linewidth=1, alpha=0.9)
 
 ax3.axhline(y=1,c="orange",linewidth=2,zorder=1) 
-ax3.axhline(y=1.2,c="red",linewidth=2,zorder=1) 
+ax3.axhline(y=1.25,c="red",linewidth=2,zorder=1) 
 
 xfmt = mdates.DateFormatter('%H:%M')
 ax3.xaxis.set_major_formatter(xfmt)
 
 xticks = ax3.xaxis.get_major_ticks()
 #xticks[0].label1.set_visible(False)
+
+yticks = ax3.yaxis.get_major_ticks()
+for i in range(6,len(yticks)):
+    yticks[i].label1.set_visible(False)
+yticks[0].label1.set_visible(False)
 
 plt.legend(NLnodes,
            prop={'size':12},
@@ -274,7 +304,7 @@ from email.mime.image import MIMEImage
 fileToSend1 = "GP2_loads_24h.png"
 fileToSend2 = "GP2_loads_cumulative.png"
 
-recipients = ['icarracedo@partners.org','dpackard@partners.org','rhudonjr@partners.org','bemcguinness@partners.org']
+recipients = ['icarracedo@partners.org']#,'dpackard@partners.org','rhudonjr@partners.org','bemcguinness@partners.org']
 
 
 msg = MIMEMultipart()
