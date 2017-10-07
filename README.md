@@ -6,7 +6,6 @@ Project where I show some visualizations I did at work for different projects. V
 	* [GOAL] Management wanted a daily report of the CPU loads of a cluster. I set up a script on the cluster that runs on a cron schedule. Then, this python script will get that data from a shared folder, parse it, and plot it. 
 	
 ![Alt text](/images/GP2_loads_24h.png?raw=true)
-![Alt text](/images/GP2_loads_cumulative.png?raw=true)
 
 * [visualization_sfa_project.ipynb](https://github.com/nachocarracedo/Visualizations/blob/master/visualization_sfa_project.ipynb): 
 	* [GOAL] The project manager wanted a visualization that showed the current status of a migration project to show to stakeholders
